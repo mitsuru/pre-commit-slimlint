@@ -1,0 +1,18 @@
+[![Gem Version](https://badge.fury.io/rb/pre-commit-slimlint.png)](https://rubygems.org/gems/pre-commit-slimlint)
+[![Build Status](https://secure.travis-ci.org/pre-commit-plugins/pre-commit-slimlint.png?branch=master)](https://travis-ci.org/pre-commit-plugins/pre-commit-slimlint)
+[![Dependency Status](https://gemnasium.com/pre-commit-plugins/pre-commit-slimlint.png)](https://gemnasium.com/pre-commit-plugins/pre-commit-slimlint)
+[![Code Climate](https://codeclimate.com/github/pre-commit-plugins/pre-commit-slimlint.png)](https://codeclimate.com/github/pre-commit-plugins/pre-commit-slimlint)
+[![Coverage Status](https://img.shields.io/coveralls/pre-commit-plugins/pre-commit-slimlint.svg)](https://coveralls.io/r/pre-commit-plugins/pre-commit-slimlint?branch=master)
+[![Inline docs](http://inch-ci.org/github/pre-commit-plugins/pre-commit-slimlint.png)](http://inch-ci.org/github/pre-commit-plugins/pre-commit-slimlint)
+[![Yard Docs](http://img.shields.io/badge/yard-docs-blue.svg)](http://rubydoc.info/github/pre-commit-plugins/pre-commit-slimlint/master/frames)
+[![Github Code](http://img.shields.io/badge/github-code-blue.svg)](https://github.com/pre-commit-plugins/pre-commit-slimlint)
+
+# Slimlint for pre-commit gem
+
+### Installation
+
+    gem install pre-commit-slimlint
+
+### Usage
+
+    pre-commit enable yaml checks slimlint
