@@ -32,7 +32,7 @@ module PreCommit
       # @return [nil|Array<PreCommit::ErrorList>] nil when no errors,
       #                                           list of errors otherwise
       def call(staged_files)
-        errors = staged_files.map { |file| run_check(file) }.compact
+        errors = run_check(staged_files).compact
         return if errors.empty?
 
         errors
@@ -48,17 +48,10 @@ module PreCommit
       # @return [nil|PreCommit::ErrorList] nil when file verified,
       #                                    ErrorList when verification failed
       #
-      def run_check(file)
-        if
-          true # add a check here to verify files
-        then
-          nil
-        else
-          PreCommit::ErrorList.new(PreCommit::Line.new("Describe why verification failed", file))
-        end
+      def run_check(files)
+        args = %w{slim-lint} + files
+        execute(args)
       end
-
     end
-
   end
 end
